@@ -59,6 +59,7 @@ class _ContactListState extends State<ContactList> {
         }
         ),
         floatingActionButton: FloatingActionButton(
+          backgroundColor: Theme.of(context).primaryColor,
           onPressed: (){
             Navigator.of(context).push(
               MaterialPageRoute(

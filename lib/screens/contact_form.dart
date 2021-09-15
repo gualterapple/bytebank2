@@ -47,6 +47,7 @@ class _ContactFormState extends State<ContactForm> {
               child: SizedBox(
                 width: double.maxFinite,
                 child: RaisedButton(
+                  color: Theme.of(context).primaryColor,
                   child: Text('Create'),
                   onPressed: () {
                     final String name = _nameController.text;
