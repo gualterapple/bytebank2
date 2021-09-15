@@ -5,13 +5,10 @@ import 'package:bytebank2/screens/dashboard.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
-  save(Contact(0,'Gualter', 1000)).then((id){
-    findAll().then((contacts) => debugPrint(contacts.toString()));
-  });
+  runApp(ByteBankApp());
 }
 
-class MyApp extends StatelessWidget {
+class ByteBankApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
