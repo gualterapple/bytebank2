@@ -55,6 +55,8 @@ final TransactionWebClient webClient = TransactionWebClient();
                   itemCount: transactions.length,
                 );
               }
+              else
+              return Text('Nothing to show');
           }
           return CenteredMessage('Unknow error');
         },
