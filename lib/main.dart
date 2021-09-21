@@ -1,8 +1,13 @@
+import 'package:bytebank2/http/webclient.dart';
+import 'package:bytebank2/models/contact.dart';
+import 'package:bytebank2/models/transaction.dart';
 import 'package:bytebank2/screens/dashboard.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(ByteBankApp());
+  //save(TransactionModel(200, Contact(0, 'Gui', 3459))).then((transaction) => print(transaction));
+  //findAll().then((value) => print('Trasações: $value'));
 }
 
 class ByteBankApp extends StatelessWidget {

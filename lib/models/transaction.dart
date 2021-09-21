@@ -1,14 +1,25 @@
 
+import 'package:sqflite/sqlite_api.dart';
+
 import 'contact.dart';
 
-class Transaction {
+class TransactionModel {
   final double value;
   final Contact contact;
 
-  Transaction(
+  TransactionModel(
     this.value,
     this.contact,
   );
+
+  TransactionModel.fromJson(Map<String, dynamic> json) :
+  value = json['value'],
+  contact = Contact.fromJson(json['contact']);
+
+  Map<String, dynamic> toJson() => {
+    'value': value,
+    'contact': contact.toJson(),
+  };
 
   @override
   String toString() {
